@@ -1,5 +1,7 @@
+/* 프리텐다드 폰트 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 @import './base.css';
-
+/* 
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -32,4 +34,4 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */
