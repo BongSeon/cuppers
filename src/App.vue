@@ -1,18 +1,16 @@
 <template>
-  <header>
-    <div class="wrapper">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
   <RouterView />
 </template>
 
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import useCafeAPI from '@/api/cafe'
+import { onMounted } from 'vue'
+
+onMounted(async () => {
+  const res = await useCafeAPI.getCafe(1)
+  console.log(res)
+})
 </script>
 
 <style scoped></style>
