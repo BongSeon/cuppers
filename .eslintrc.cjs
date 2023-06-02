@@ -12,10 +12,20 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
-  'at-rule-no-unknown': [
-    true,
+  rules: {
+    'vue/multi-word-component-names': [
+      'error',
+      {
+        ignores: ['Btn', 'Spinner', 'Dots', 'Icon'],
+      },
+    ],
+  },
+  overrides: [
     {
-      ignoreAtRules: ['tailwind', 'apply', 'variants', 'responsive', 'screen'],
+      files: ['*.ts', '*.vue'],
+      rules: {
+        'no-undef': 'off',
+      },
     },
   ],
 }
