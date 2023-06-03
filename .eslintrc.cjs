@@ -3,6 +3,9 @@ require('@rushstack/eslint-patch/modern-module-resolution')
 
 module.exports = {
   root: true,
+  env: {
+    node: true,
+  },
   extends: [
     'plugin:vue/vue3-essential',
     'eslint:recommended',
@@ -16,7 +19,7 @@ module.exports = {
     'vue/multi-word-component-names': [
       'error',
       {
-        ignores: ['Btn', 'Spinner', 'Dots', 'Icon'],
+        ignores: ['index', 'Btn', 'Spinner', 'Dots', 'Icon'],
       },
     ],
   },

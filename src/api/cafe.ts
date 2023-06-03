@@ -3,7 +3,6 @@ import axios from 'axios'
 const axiosState = {
   baseURL: import.meta.env.VITE_BASE_API_URL,
 }
-console.log(axiosState.baseURL)
 const instance = axios.create(axiosState)
 
 const getCafe = async (cafe_id: number) => {

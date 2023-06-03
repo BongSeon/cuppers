@@ -4,8 +4,7 @@
 
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import useCafeAPI from '@/api/cafe'
-import { onMounted } from 'vue'
+import useCafeAPI from './api/cafe'
 
 onMounted(async () => {
   const res = await useCafeAPI.getCafe(1)
