@@ -16,6 +16,7 @@ module.exports = {
     ecmaVersion: 'latest',
   },
   rules: {
+    'vue/comment-directive': 'off', // solve error on end of index.html
     'vue/multi-word-component-names': [
       'error',
       {

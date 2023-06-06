@@ -27,7 +27,7 @@ props.icon
 .icon-lg {
   @apply w-7 h-7;
 }
-.icon-xl {
+.icon-xl .icon {
   @apply w-9 h-9;
 }
 .icon-2xl .icon {
