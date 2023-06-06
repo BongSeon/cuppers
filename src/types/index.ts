@@ -21,3 +21,14 @@ export interface User extends BasicUserInfo {
   is_necessary_terms_agreed?: boolean
   is_optional_terms_agreed?: boolean
 }
+
+export interface Cnote {
+  cnote_id: number
+  cnote_img: string
+  cnote_title: string
+  cnote_cnotent: string
+  // user_id
+  // represent
+  // created_at
+  // is_active
+}

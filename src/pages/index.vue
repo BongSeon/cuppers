@@ -1,9 +1,14 @@
 <template>
-  <main>
-    <h4 class="main_tile">
-      철학이 담긴<br />커피 한 잔<br /><span class="">커퍼스' ☕</span>
+  <main class="px-res pt-10">
+    <h4 class="landing-title -tracking-2 font-nanum">
+      철학이 담긴<br />커피 한 잔<br /><span class="text-primary"
+        >커퍼스' ☕</span
+      >
     </h4>
-    <figure class="cnotes bg-slate-500">cnotes(캐러셀)</figure>
+
+    <figure class="my-10">
+      <MainCarousel />
+    </figure>
 
     <section class="keywords">
       <h4>CAFE KEYWORD</h4>
@@ -37,7 +42,9 @@
   </main>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MainCarousel from '@/components/carousel/MainCarousel.vue'
+</script>
 
 <style scoped>
 section {
@@ -57,5 +64,8 @@ section.todays-cafe article {
 }
 section.todays-cafe article figure {
   @apply border-r border-b border-blue-600;
+}
+.landing-title {
+  @apply text-4xl md:text-5xl lg:text-6xl;
 }
 </style>
