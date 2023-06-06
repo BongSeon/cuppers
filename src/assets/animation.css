@@ -1,0 +1,32 @@
+/* nomal fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* fade-left, fade-right */
+.fade-left-move,
+.fade-left-enter-active,
+.fade-left-leave-active,
+.fade-right-move,
+.fade-right-enter-active,
+.fade-right-leave-active {
+  transition: all 400ms cubic-bezier(0.55, 0, 0.1, 1);
+}
+.fade-left-enter-from,
+.fade-left-leave-to,
+.fade-right-leave-active {
+  opacity: 0;
+  transform: translate(-20px, 0);
+}
+.fade-left-leave-active,
+.fade-right-enter-from,
+.fade-right-leave-to {
+  opacity: 0;
+  transform: translate(20px, 0);
+}
