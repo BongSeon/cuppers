@@ -21,8 +21,10 @@
   "include": [
     "src/**/*",
     "src/**/**/*",
+    "src/**/*.json",
     "src/*.vue",
     "src/*.ts",
+    "src/**/*.ts",
     "src/**/*.d.ts",
     "env.d.ts",
     "auto-imports.d.ts"

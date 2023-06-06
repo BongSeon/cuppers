@@ -1,0 +1,35 @@
+{
+  "cuppers": "Cuppers",
+  "로그인": "Log in",
+  "로그아웃": "Log out",
+  "회원가입": "Sign up",
+  "회원가입/로그인": "Sign up/Log in",
+  "뒤로": "back",
+  "목록": "list",
+  "더보기": "more",
+  "언어변경": "Change Language",
+
+  "이벤트": "Event",
+  "탐색": "Find Cafe",
+
+  "host": "Host",
+  "guest": "Guest",
+  "all": "All",
+  "minutes": "minutes",
+
+  "faq": "Frequently Asked Questions",
+  "notice": "Notice",
+  "About-Cuppers": "About Cuppers",
+
+  "upload": "upload",
+  "follow": "follow",
+  "contact": "contact",
+  "payment": "payment",
+
+  "mypage": "마이페이지",
+  "어떤 카페를 찾고 계신가요?": "What event are you looking for?",
+
+  "membership": "Membership",
+  "promo": "Promo code",
+  "holding": "Holding"
+}
