@@ -6,7 +6,7 @@ const axiosState = {
 const instance = axios.create(axiosState)
 
 const getCnotes = async () => {
-  const apiUrl = `cnote/landing`
+  const apiUrl = `cnotes/landing`
   const temp = await instance.get(apiUrl)
 
   const res: FetchResponse = {
@@ -17,7 +17,7 @@ const getCnotes = async () => {
   return res
 }
 
-const useCnoteAPI = {
+const useCnotesAPI = {
   getCnotes,
 }
-export default useCnoteAPI
+export default useCnotesAPI

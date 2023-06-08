@@ -5,8 +5,8 @@ const axiosState = {
 }
 const instance = axios.create(axiosState)
 
-const getCafe = async (cafe_id: number) => {
-  const apiUrl = `cafe/${cafe_id}`
+const getLandingKeywords = async () => {
+  const apiUrl = 'keywords/landing'
   const temp = await instance.get(apiUrl)
 
   const res: FetchResponse = {
@@ -17,7 +17,7 @@ const getCafe = async (cafe_id: number) => {
   return res
 }
 
-const useCafeAPI = {
-  getCafe,
+const useKeywordsAPI = {
+  getLandingKeywords,
 }
-export default useCafeAPI
+export default useKeywordsAPI

@@ -47,7 +47,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { Lazy, Navigation, Pagination, Autoplay } from 'swiper'
 import { ref, onMounted } from 'vue'
-import useCnoteAPI from '@/api/cnote'
+import useCnotesAPI from '@/api/cnotes'
 import { useRouter } from 'vue-router'
 
 const router = useRouter()
@@ -61,7 +61,7 @@ type CarouselData = {
 const items = ref<CarouselData[]>([])
 
 onMounted(async () => {
-  const res = await useCnoteAPI.getCnotes()
+  const res = await useCnotesAPI.getCnotes()
   if (res.ok) {
     const data = res.data as Cnote[]
     console.log(data)

@@ -4,10 +4,10 @@
 
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
-import useCafeAPI from './api/cafe'
+import useCafesAPI from './api/cafes'
 
 onMounted(async () => {
-  const res = await useCafeAPI.getCafe(1)
+  const res = await useCafesAPI.getCafe(1)
   console.log(res)
 })
 </script>

@@ -20,3 +20,14 @@
 ## 6/3
 
 - [x] setup: apply generated layouts, pages
+
+## 6/6
+
+- [x] setup: @vueuse/core, date-fns, generals, types
+- [x] feat: me-store, navbar, login page, btn-my
+- [x] setup: vue-i18n
+- [x] setup: font-nanum, swiper
+
+## 6/8
+
+- [x] feat: change api name, add keyword api, add grid
